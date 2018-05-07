@@ -20,8 +20,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     @NotNull
-    private String name;
-    private String surname;
+    private String first_name;
+    private String last_name;
     private String adress;
 
     public long getId() {
@@ -32,20 +32,20 @@ public class User {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirst_name() {
+        return first_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public String getAdress() {
@@ -60,11 +60,11 @@ public class User {
         super();
     }
 
-    public User(String name, String surname, String adress) {
+    public User(String first_name, String last_name, String adress) {
         super();
 
-        this.name = name;
-        this.surname = surname;
+        this.first_name = first_name;
+        this.last_name = last_name;
         this.adress = adress;
     }
 
