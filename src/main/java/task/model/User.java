@@ -22,7 +22,7 @@ public class User {
     @NotNull
     private String name;
     private String last_name;
-    private String adress;
+    private String address;
 
     public long getId() {
         return id;
@@ -48,24 +48,24 @@ public class User {
         this.last_name = last_name;
     }
 
-    public String getAdress() {
-        return adress;
+    public String getAddress() {
+        return address;
     }
 
-    public void setAdress(String adress) {
-        this.adress = adress;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public User() {
         super();
     }
 
-    public User(String name, String last_name, String adress) {
+    public User(String name, String last_name, String address) {
         super();
 
         this.name = name;
         this.last_name = last_name;
-        this.adress = adress;
+        this.address = address;
     }
 
 }

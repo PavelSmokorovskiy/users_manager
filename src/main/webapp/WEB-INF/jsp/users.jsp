@@ -19,8 +19,8 @@
         </tr>
 
         <tr>
-            <td><b>Adress</b></td>
-            <td><input type='text' name='adress' class='form-control' size="20" required/></td>
+            <td><b>Address</b></td>
+            <td><input type='text' name='address' class='form-control' size="20" required/></td>
 
         </tr>
 
@@ -43,7 +43,7 @@
     <tr>
         <th><b>User Name</b></th>
         <th><b>User Last name</b></th>
-        <th><b>User Adress</b></th>
+        <th><b>User Address</b></th>
         <th><b>Transactions</b></th>
     </tr>
     </thead>
@@ -52,7 +52,7 @@
         <tr>
             <td><c:out value="${lou.name}"></c:out></td>
             <td><c:out value="${lou.last_name}"></c:out></td>
-            <td><c:out value="${lou.adress}"></c:out></td>
+            <td><c:out value="${lou.address}"></c:out></td>
 
             <td>
                 <a href="/users/${lou.id}/edit">

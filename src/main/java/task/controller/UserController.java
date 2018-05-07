@@ -61,11 +61,11 @@ public class UserController {
     public ModelAndView update(@RequestParam("id") long id
             , @RequestParam("name") String name
             , @RequestParam("last_name") String last_name
-            , @RequestParam("adress") String adress) {
+            , @RequestParam("address") String address) {
         User user = userService.getUserById(id);
         user.setName(name);
         user.setLast_name(last_name);
-        user.setAdress(adress);
+        user.setAddress(address);
         userService.saveUser(user);
         return new ModelAndView("redirect:/users");
     }

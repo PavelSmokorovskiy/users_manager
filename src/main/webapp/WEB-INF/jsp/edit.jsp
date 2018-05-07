@@ -20,8 +20,8 @@
             </tr>
 
             <tr>
-                <td><b>Adress</b></td>
-                <td><input type='text' name='adress' class='form-control' size="20" value="${user.adress}"/></td>
+                <td><b>Address</b></td>
+                <td><input type='text' name='address' class='form-control' size="20" value="${user.address}"/></td>
 
             </tr>
 
