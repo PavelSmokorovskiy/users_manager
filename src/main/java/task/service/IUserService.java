@@ -1,11 +1,6 @@
-/**
- * 
- */
 package task.service;
 
-
 import task.model.User;
-
 
 /**
  * @author Pavel Smokorovskiy on 03.05.18

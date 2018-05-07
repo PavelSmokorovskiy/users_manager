@@ -1,6 +1,3 @@
-/**
- *
- */
 package task.model;
 
 import javax.persistence.Entity;
