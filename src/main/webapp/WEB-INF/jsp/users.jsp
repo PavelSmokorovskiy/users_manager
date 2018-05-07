@@ -10,17 +10,17 @@
 
         <tr>
             <td><b>Name</b></td>
-            <td><input type='text' first_name='first_name' class='form-control' required/></td>
+            <td><input type='text' name='name' class='form-control' required/></td>
         </tr>
 
         <tr>
             <td><b>Surname</b></td>
-            <td><input type='text' first_name='last_name' class='form-control' required/></td>
+            <td><input type='text' name='surname' class='form-control' required/></td>
         </tr>
 
         <tr>
             <td><b>Adress</b></td>
-            <td><input type='text' first_name='adress' class='form-control' size="20" required/></td>
+            <td><input type='text' name='adress' class='form-control' size="20" required/></td>
 
         </tr>
 
@@ -50,8 +50,8 @@
     <tbody>
     <c:forEach items="${list}" var="lou">
         <tr>
-            <td><c:out value="${lou.first_name}"></c:out></td>
-            <td><c:out value="${lou.last_name}"></c:out></td>
+            <td><c:out value="${lou.name}"></c:out></td>
+            <td><c:out value="${lou.surname}"></c:out></td>
             <td><c:out value="${lou.adress}"></c:out></td>
 
             <td>

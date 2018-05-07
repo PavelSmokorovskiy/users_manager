@@ -63,8 +63,8 @@ public class UserController {
             , @RequestParam("surname") String surname
             , @RequestParam("adress") String adress) {
         User user = userService.getUserById(id);
-        user.setFirst_name(name);
-        user.setLast_name(surname);
+        user.setName(name);
+        user.setSurname(surname);
         user.setAdress(adress);
         userService.saveUser(user);
         return new ModelAndView("redirect:/users");
