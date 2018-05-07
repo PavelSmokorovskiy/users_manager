@@ -60,11 +60,11 @@ public class UserController {
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     public ModelAndView update(@RequestParam("id") long id
             , @RequestParam("name") String name
-            , @RequestParam("surname") String surname
+            , @RequestParam("last_name") String last_name
             , @RequestParam("adress") String adress) {
         User user = userService.getUserById(id);
         user.setName(name);
-        user.setSurname(surname);
+        user.setLast_name(last_name);
         user.setAdress(adress);
         userService.saveUser(user);
         return new ModelAndView("redirect:/users");

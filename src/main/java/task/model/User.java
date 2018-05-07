@@ -21,7 +21,7 @@ public class User {
     private long id;
     @NotNull
     private String name;
-    private String surname;
+    private String last_name;
     private String adress;
 
     public long getId() {
@@ -40,12 +40,12 @@ public class User {
         this.name = name;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public String getAdress() {
@@ -60,11 +60,11 @@ public class User {
         super();
     }
 
-    public User(String name, String surname, String adress) {
+    public User(String name, String last_name, String adress) {
         super();
 
         this.name = name;
-        this.surname = surname;
+        this.last_name = last_name;
         this.adress = adress;
     }
 

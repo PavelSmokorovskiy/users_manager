@@ -15,8 +15,8 @@
             </tr>
 
             <tr>
-                <td><b>Surname</b></td>
-                <td><input type='text' name='surname' class='form-control' value="${user.surname}"/></td>
+                <td><b>Last name</b></td>
+                <td><input type='text' name='last_name' class='form-control' value="${user.last_name}"/></td>
             </tr>
 
             <tr>

@@ -14,8 +14,8 @@
         </tr>
 
         <tr>
-            <td><b>Surname</b></td>
-            <td><input type='text' name='surname' class='form-control' required/></td>
+            <td><b>Last name</b></td>
+            <td><input type='text' name='last_name' class='form-control' required/></td>
         </tr>
 
         <tr>
@@ -27,7 +27,7 @@
         <tr>
             <td></td>
             <td>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary">Add User</button>
             </td>
         </tr>
 
@@ -42,7 +42,7 @@
     <thead>
     <tr>
         <th><b>User Name</b></th>
-        <th><b>User Surname</b></th>
+        <th><b>User Last name</b></th>
         <th><b>User Adress</b></th>
         <th><b>Transactions</b></th>
     </tr>
@@ -51,7 +51,7 @@
     <c:forEach items="${list}" var="lou">
         <tr>
             <td><c:out value="${lou.name}"></c:out></td>
-            <td><c:out value="${lou.surname}"></c:out></td>
+            <td><c:out value="${lou.last_name}"></c:out></td>
             <td><c:out value="${lou.adress}"></c:out></td>
 
             <td>
